@@ -6,7 +6,7 @@ unlet! b:current_syntax
 syntax include @SQL syntax/sql.vim
 
 " Set SQL to match in any clojureString that starts an obvious start-of-SQL-marker.
-"	Take care not to consume the double-quotes.
+"	Take care not to consume the double-quotes (\zs & \ze).
 "	Matches are case-sensitive (\C), because I always uppercase SQL keywords.
 syntax region sqlSnippet start=/"\C\zsSELECT/ end=/\ze"/ contains=@SQL containedin=clojureString
 syntax region sqlSnippet start=/"\C\zsDROP/   end=/\ze"/ contains=@SQL containedin=clojureString
