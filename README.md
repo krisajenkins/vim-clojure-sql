@@ -34,4 +34,4 @@ Thanks to [Max Bane][maxbane] who figured out the hard stuff when when [mixing T
 [pathogen]: https://github.com/tpope/vim-pathogen/
 [vimclojure]: https://github.com/kotarak/vimclojure
 [maxbane]: http://clml.uchicago.edu/~max/
-[tex_python_stackoverflow]: http://stackoverflow.com/questions/519753/vimembedded-syntax-highligting
+[tex_python_stackoverflow]: http://stackoverflow.com/questions/5176972/trouble-using-vims-syn-include-and-syn-region-to-embed-syntax-highlighting
