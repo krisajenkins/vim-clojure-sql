@@ -16,7 +16,7 @@ Matches are case-sensitive, because that's my preference, but it's trivial to fo
 
 ## Credits
 
-Thanks to [Max Bane][maxbane] who figured out the hard stuff when when [mixing Tex with Python][tex_python_stackoverflow]].
+Thanks to [Max Bane][maxbane] who figured out the hard stuff when when [mixing Tex with Python][tex_python_stackoverflow].
 
 [pathogen]: https://github.com/tpope/vim-pathogen/
 [vimclojure]: https://github.com/kotarak/vimclojure
