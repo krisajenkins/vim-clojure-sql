@@ -1,5 +1,5 @@
 " Disable current syntax temporarily.
-let current_syntax = b:current_syntax
+let saved_syntax = b:current_syntax
 unlet! b:current_syntax
 
 " Load SQL syntax.
@@ -13,5 +13,5 @@ syntax region sqlSnippet start=/"\C\zsDROP/   end=/\ze"/ contains=@SQL contained
 syntax region sqlSnippet start=/"\C\zsCREATE/ end=/\ze"/ contains=@SQL containedin=clojureString
 
 " Restore original syntax.
-let b:current_syntax = current_syntax
-unlet! current_syntax
+let b:current_syntax = saved_syntax
+unlet! saved_syntax
