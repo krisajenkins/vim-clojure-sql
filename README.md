@@ -1,6 +1,10 @@
 # vim-clojure-sql
 
-A very simple plugin to enable SQL syntax highlighting inside string in a Clojure file. Works with the standard [vimclojure][vimclojure] plugin.
+A very simple plugin to enable SQL syntax highlighting inside strings in a
+Clojure file. If you can handle the visual trip of two syntax highlighters
+co-existing, this plugin will provide.
+
+Works with the standard [vimclojure][vimclojure] plugin.
 
 ## Installation
 
@@ -10,9 +14,17 @@ A very simple plugin to enable SQL syntax highlighting inside string in a Clojur
 
 ## Usage
 
-Whenever you edit a clojure file, strings starting with `"SELECT`, `"CREATE` or `"DROP` will be highlighted as SQL.
+Whenever you edit a Clojure file, strings starting with `"SELECT`, `"CREATE` or
+`"DROP` will be highlighted as SQL.
 
-Matches are case-sensitive, because that's my preference, but it's trivial to fork & change the matching rules to suit your preferences.
+Matches are case-sensitive, because that's my preference, but it's trivial to
+fork & change the matching rules to suit your preferences.
+
+## Notes
+
+This repo serves as a reasonable recipe for embedded Vim syntax highlighting in
+general. The next time I'm there, I'll probably write a plug for SQL inside
+Hibernate XML files...
 
 ## Credits
 
