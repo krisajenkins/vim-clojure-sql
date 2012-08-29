@@ -1,0 +1,17 @@
+" Disable current syntax temporarily.
+let current_syntax = b:current_syntax
+unlet! b:current_syntax
+
+" Load SQL syntax.
+syntax include @SQL syntax/sql.vim
+
+" Set SQL to match in any clojureString that starts an obvious start-of-SQL-marker.
+"	Take care not to consume the double-quotes.
+"	Matches are case-sensitive (\C), because I always uppercase SQL keywords.
+syntax region sqlSnippet start=/"\C\zsSELECT/ end=/\ze"/ contains=@SQL containedin=clojureString
+syntax region sqlSnippet start=/"\C\zsDROP/   end=/\ze"/ contains=@SQL containedin=clojureString
+syntax region sqlSnippet start=/"\C\zsCREATE/ end=/\ze"/ contains=@SQL containedin=clojureString
+
+" Restore original syntax.
+let b:current_syntax = current_syntax
+unlet! current_syntax
