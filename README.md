@@ -23,8 +23,9 @@ fork & change the matching rules to suit your preferences.
 ## Notes
 
 This repo serves as a reasonable recipe for embedded Vim syntax highlighting in
-general. The next time I'm there, I'll probably write a plug for SQL inside
-Hibernate XML files...
+general. The next time I'm there, I'll probably write a plugin for SQL inside
+Hibernate XML files. Highlighting code inside docstrings is another obvious use
+of this recipe.
 
 ## Credits
 
