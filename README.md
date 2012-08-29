@@ -18,7 +18,7 @@ Whenever you edit a Clojure file, strings starting with `"SELECT`, `"CREATE` or
 `"DROP` will be highlighted as SQL.
 
 Matches are case-sensitive, because that's my preference, but it's trivial to
-fork & change the matching rules to suit your preferences.
+fork & change the matching rules to suit your coding style.
 
 ## Notes
 
