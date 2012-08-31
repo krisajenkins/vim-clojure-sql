@@ -9,9 +9,9 @@ syntax include @SQL syntax/sql.vim
 "	Take care not to consume the double-quotes (\zs & \ze).
 "	Matches are case-sensitive (\C), because I always uppercase SQL keywords.
 syntax region sqlSnippet start=/"\C\zsSELECT/ end=/\ze"/ contains=@SQL containedin=clojureString
-syntax region sqlSnippet start=/"\C\zsDROP/   end=/\ze"/ contains=@SQL containedin=clojureString
-syntax region sqlSnippet start=/"\C\zsCREATE/ end=/\ze"/ contains=@SQL containedin=clojureString
 syntax region sqlSnippet start=/"\C\zsINSERT/ end=/\ze"/ contains=@SQL containedin=clojureString
+syntax region sqlSnippet start=/"\C\zsCREATE/ end=/\ze"/ contains=@SQL containedin=clojureString
+syntax region sqlSnippet start=/"\C\zsDROP/   end=/\ze"/ contains=@SQL containedin=clojureString
 
 " Restore original syntax.
 let b:current_syntax = saved_syntax
