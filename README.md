@@ -31,7 +31,12 @@ of this approach.
 
 Thanks to [Max Bane][maxbane] who figured out the hard stuff when when [mixing Tex with Python][tex_python_stackoverflow].
 
+## See Also
+
+[vim-java-sql][vim-java-sql] - the same plugin for SQL inside Java files.
+
 [pathogen]: https://github.com/tpope/vim-pathogen/
 [vimclojure]: https://github.com/kotarak/vimclojure
 [maxbane]: http://clml.uchicago.edu/~max/
 [tex_python_stackoverflow]: http://stackoverflow.com/questions/5176972/trouble-using-vims-syn-include-and-syn-region-to-embed-syntax-highlighting
+[vim-java-sql]: https://github.com/krisajenkins/vim-java-sql
