@@ -14,8 +14,8 @@ Works with the standard [vimclojure][vimclojure] plugin.
 
 ## Usage
 
-Whenever you edit a Clojure file, strings starting with `"SELECT`, `"INSERT`, `"CREATE` or
-`"DROP` will be highlighted as SQL.
+Whenever you edit a Clojure file, strings starting with `"SELECT`, `"INSERT`,
+`"UPDATE`, `"DELETE`, `"CREATE` or `"DROP` will be highlighted as SQL.
 
 Matches are case-sensitive, because that's my preference, but it's trivial to
 fork & change the matching rules to suit your coding style.
